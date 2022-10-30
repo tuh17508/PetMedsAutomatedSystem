@@ -14,24 +14,6 @@ namespace PetMedsAutomatedSystem
 
         }
 
-        protected void imgbtnVet_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("Vet.aspx");
-        }
 
-        protected void imgbtnCSR_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("CSR.aspx");
-        }
-
-        protected void imgbtnDispensingDept_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("DispensingDept.aspx");
-        }
-
-        protected void imgbtnPetOwner_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("PetOwner.aspx");
-        }
     }
 }

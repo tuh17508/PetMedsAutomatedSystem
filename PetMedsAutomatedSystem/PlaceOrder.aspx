@@ -1,38 +1,70 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PetMeds.Master" AutoEventWireup="true" CodeBehind="PlaceOrder.aspx.cs" Inherits="PetMedsAutomatedSystem.PlaceOrder" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .container {
+            text-align:center;
+        }
+        .nav-pills{
+            float:right;
+        }
+        .hero-unit{
+
+        }
+        label{
+            display:inline-block;
+            width:200px;
+            margin-right:30px;
+            text-align:center;
+        }
+    </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="active">
+                <a href="Login.aspx">Login</a>
+            </li>
+        </ul>
+        <br />
+        <div class="hero-unit">
+            <h1>Place Order Form</h1>
+            <p>Please enter info in each of the textboxes before clicking submit.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" /><br />
+                <label for="POfname">Pet Owner First Name:</label>
+                <input type="text" id="POfname" name="POfname" /><br />
+                <label for="POemail">Pet Owner Email Address:</label>
+                <input type="text" id="POemail" name="POemail" /><br />
+                <label for="POaddress1">Pet Owner Address 1:</label>
+                <input type="text" id="POaddress1" name="POaddress1" /><br />
+                <label for="petName">Pet Name:</label>
+                <input type="text" id="petName" name="petName" /><br />
+                <label for="prescriptionName">Prescription Name:</label>
+                <input type="text" id="prescriptionName" name="prescriptionName" /><br />
+                <label for="date">Today's Date:</label>
+                <input type="text" id="date" name="date" /><br />
+            </div>
+            <div class="col-sm-4">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" /><br />
+                <label for="POlname">Pet Owner Last Name:</label>
+                <input type="text" id="POlname" name="POlname" /><br />
+                <label for="POphone">Pet Owner Phone Number:</label>
+                <input type="text" id="POphone" name="POphone" /><br />
+                <label for="POaddress2">Pet Owner Address 2:</label>
+                <input type="text" id="POaddress2" name="POaddress2" /><br />
+                <label for="petType">Pet Type:</label>
+                <input type="text" id="petType" name="petType" /><br />
+                <label for="prescriptionPrice">Prescription Price:</label>
+                <input type="text" id="prescriptionPrice" name="prescriptionPrice" /><br /><br />
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+        
+        
 
-    <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
-    <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
-    <asp:Label ID="lblLastName" runat="server" Text="Last Name"></asp:Label>
-    <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox><br />
-
-    <asp:Label ID="lblPOFirstName" runat="server" Text="Pet Owner First Name"></asp:Label>
-    <asp:TextBox ID="txtPOFirstName" runat="server"></asp:TextBox>
-    <asp:Label ID="lblPOLastName" runat="server" Text="Pet Owner Last Name"></asp:Label>
-    <asp:TextBox ID="txtPOLastName" runat="server"></asp:TextBox><br />
-
-    <asp:Label ID="lblPOEmailAddress" runat="server" Text="Pet Owner Email Address"></asp:Label>
-    <asp:TextBox ID="txtPOEmailAddress" runat="server"></asp:TextBox>
-    <asp:Label ID="lblPOPhoneNum" runat="server" Text="Pet Owner Phone Number"></asp:Label>
-    <asp:TextBox ID="txtPOPhoneNum" runat="server"></asp:TextBox><br />
-
-    <asp:Label ID="lblPOAddress1" runat="server" Text="Pet Owner Address 1"></asp:Label>
-    <asp:TextBox ID="txtPOAddress1" runat="server"></asp:TextBox>
-    <asp:Label ID="lblPOAddress2" runat="server" Text="Pet Owner Address 2"></asp:Label>
-    <asp:TextBox ID="txtPOAddress2" runat="server"></asp:TextBox><br />
-
-    <asp:Label ID="lblPetName" runat="server" Text="Pet Name"></asp:Label>
-    <asp:TextBox ID="txtPetName" runat="server"></asp:TextBox>
-    <asp:Label ID="lblPetType" runat="server" Text="Pet Type"></asp:Label>
-    <asp:TextBox ID="txtPetType" runat="server"></asp:TextBox><br />
-
-    <asp:Label ID="lblPrescriptionName" runat="server" Text="Prescription Name"></asp:Label>
-    <asp:TextBox ID="txtPrescriptionName" runat="server"></asp:TextBox>
-    <asp:Label ID="lblPrescriptionPrice" runat="server" Text="Prescription Price"></asp:Label>
-    <asp:TextBox ID="txtPrescriptionPrice" runat="server"></asp:TextBox><br />
-
-    <asp:Label ID="lblDate" runat="server" Text="Today's Date"></asp:Label>
-    <asp:TextBox ID="txtDate" runat="server"></asp:TextBox><br />
 </asp:Content>

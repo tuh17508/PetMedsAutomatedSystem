@@ -1,50 +1,59 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PetMeds.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PetMedsAutomatedSystem.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <%-- Three pages:
+    Page1: Login Page-Login.aspx, Bootstrap comp-.container, .imgbtn
+    Page2: Vet Page-Vet.aspx, Bootstrap comp-.container, .nav-pills, .btn, .btn-group, .drowndown-toggle, .drowndown-menu, .btn-group-verticle
+    Page3: Place Order Page-PlaceOrder.aspx, Bootstrap comp-.container, .nav-pills, .hero-unit --%>
+    <style>
+        .container{
+            text-align:center;
+        }
+
+        .imgbtn{
+            height:122px;
+            width:131px;
+        }
+
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h5>Login</h5>
     <div class="container">
-        <center>
         <h6>Username: </h6>
         <input id="txtUsername" name="txtUsername" type="text" />
         <br />
         <h6>Password: </h6>
         <input id="txtPassword" name="txtPassword" type="text" />
         <h6>Please choose your role:</h6>
-        <br />
-            <div>
-        <%--<div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="images/Vet.jpg" style="height:122px; width:131px;" alt="Vet Clipart">
-                    <input type="button" onclick="Vet.aspx" value="Vet"/>
-                </div>
-                <div class="col-sm-4">
-                    <img src="images/CSR.jpg" style="height:122px; width:131px;" alt="Customer Service Clipart">
-                    <input type="button" onclick="CSR.aspx" value="CSR"/>
-                </div>
+        <br /><br />
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Vet</h3>
+                <a href="Vet.aspx">
+                    <img class="imgbtn" src="images/Vet.jpg" alt="Vet Clipart" />
+                </a>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="images/DispensingDept.jpg" style="height:122px; width:131px;" alt="Dispensing Department Clipart">
-                    <input type="button" onclick="DispensingDept.aspx" value="Dispensing Department"/>
-                </div>
-                <div class="col-sm-4">
-                    <img src="images/PetOwner3.png" style="height:122px; width:131px;" alt="Dispensing Department Clipart">
-                    <input type="button" onclick="PetOwner.aspx" value="Pet Owner"/>
-                </div>
-            </div>--%>
-            <asp:Label ID="lblVet" runat="server" Text="Vet"></asp:Label>
-            <asp:ImageButton ID="imgbtnVet" runat="server" Height="122px" Width="131px" ImageUrl="images/Vet.jpg" OnClick="imgbtnVet_Click"/><br />
-            <asp:Label ID="lblCSR" runat="server" Text="CSR"></asp:Label>
-            <asp:ImageButton ID="imgbtnCSR" runat="server" Height="122px" Width="131px" ImageUrl="images/CSR.jpg" OnClick="imgbtnCSR_Click"/> <br />
-            <asp:Label ID="lblDispensingDept" runat="server" Text="Dispensing Department"></asp:Label>
-            <asp:ImageButton ID="imgbtnDispDept" runat="server" Height="122px" Width="131px" ImageUrl="images/DispensingDept.jpg" OnClick="imgbtnDispensingDept_Click"/> <br />
-            <asp:Label ID="lblPeOwner" runat="server" Text="Pet Owner"></asp:Label>
-            <asp:ImageButton ID="imgbtnPetOwner" runat="server" Height="122px" Width="131px" ImageUrl="images/PetOwner3.png" OnClick="imgbtnPetOwner_Click"/>
+            <div class="col-sm-4">
+                <h3>CSR</h3>
+                <a href="CSR.aspx">
+                    <img class="imgbtn" src="images/CSR.jpg" alt="Customer Service Clipart" />
+                </a>
+            </div>
         </div>
-          
-        </center>     
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Dispensing Department</h3>
+                <a href="DispensingDept.aspx">
+                    <img class="imgbtn" src="images/DispensingDept.jpg" alt="Dispensing Department Clipart" />
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <h3>Pet Owner</h3>
+                <a class="btn" href="PetOwner.aspx">
+                    <img class="imgbtn" src="images/PetOwner3.png" alt="Pet Owner Clipart" />
+                </a>
+            </div>
+        </div>  
     </div> 
 </asp:Content> 
 

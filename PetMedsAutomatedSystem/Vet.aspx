@@ -3,13 +3,30 @@
         
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <style>
+    <style>        
         .container{
-
+            text-align: center;
         }
         .nav-pills{
-            float:right;
+            float: right;
         }
+        .btn {
+            color: white;
+            background-color: cornflowerblue;
+        }
+        .btn-group {
+
+        }
+        .dropdown-toggle {
+
+        }
+        .dropdown-menu {
+
+        }
+        .btn-group-verticle {
+
+        }
+        
     </style>
     
     <div class="container">
@@ -17,15 +34,24 @@
             <li class="active">
                 <a href="Login.aspx">Login</a>
             </li>
-            <li><a href="Profile.aspx">Profile</a></li>
-            <li><a href="Messages.aspx">Messages</a></li>
         </ul>
         <br />
         <h5>Vet</h5>
-        <a href="PlaceOrder.aspx">Place an Order</a><br />
-        <a href="ViewEmail.aspx">View Email</a><br />
-        <a href="ViewPrescriptions.aspx">View Prescriptions</a><br />
-        <a href="ViewOrders.aspx">View Orders</a>
+        <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                Orders
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="PlaceOrder.aspx">Place an Order</a></li>
+                <li><a href="ViewOrders.aspx">View Orders</a></li>
+            </ul>
+        </div><br /><br />
+        <div class="btn-group btn-group-vertical">
+            <button class="btn" href="ViewEmail.aspx">View Email</button>
+            <button class="btn" href="ViewPrescriptions.aspx">View Prescriptions</button>
+        </div>
+
     </div>
     
 </asp:Content>
