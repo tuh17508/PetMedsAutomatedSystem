@@ -1,9 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PetMeds.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PetMedsAutomatedSystem.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%-- Three pages:
-    Page1: Login Page-Login.aspx, Bootstrap comp-.container, .imgbtn
-    Page2: Vet Page-Vet.aspx, Bootstrap comp-.container, .nav-pills, .btn, .btn-group, .drowndown-toggle, .drowndown-menu, .btn-group-verticle
-    Page3: Place Order Page-PlaceOrder.aspx, Bootstrap comp-.container, .nav-pills, .hero-unit --%>
     <style>
         .container{
             text-align:center;

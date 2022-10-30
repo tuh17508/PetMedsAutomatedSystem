@@ -4,7 +4,11 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <%-- Three pages:
+    Page1: Login Page-Login.aspx, Bootstrap comp-.container, .imgbtn
+    Page2: Vet Page-Vet.aspx, Bootstrap comp-.container, .nav-pills, .btn, .btn-group, .drowndown-toggle, .drowndown-menu, .btn-group-verticle
+    Page3: Place Order Page-PlaceOrder.aspx, Bootstrap comp-.container, .nav-pills, .hero-unit --%>
+    <title>Pet Meds Automated System</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
