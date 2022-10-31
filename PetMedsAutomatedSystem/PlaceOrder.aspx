@@ -20,12 +20,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
     <div class="container">
-        <ul class="nav nav-pills">
-            <li class="active">
-                <a href="Login.aspx">Login</a>
-            </li>
-        </ul>
-        <br />
         <div class="hero-unit">
             <h1>Place Order Form</h1>
             <p>Please enter info in each of the textboxes before clicking submit.</p>
@@ -64,7 +58,4 @@
             </div>
         </div>
     </div>
-        
-        
-
 </asp:Content>

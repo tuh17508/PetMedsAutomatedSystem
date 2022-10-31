@@ -13,8 +13,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h5>Login</h5>
     <div class="container">
+        <h5>Login</h5>
         <h6>Username: </h6>
         <input id="txtUsername" name="txtUsername" type="text" />
         <br />

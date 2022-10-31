@@ -30,18 +30,13 @@
     </style>
     
     <div class="container">
-        <ul class="nav nav-pills">
-            <li class="active">
-                <a href="Login.aspx">Login</a>
-            </li>
-        </ul>
-        <br />
         <h5>Vet</h5>
         <div class="btn-group">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                 Orders
                 <span class="caret"></span>
-            </a>
+            </a><br />
+            
             <ul class="dropdown-menu">
                 <li><a href="PlaceOrder.aspx">Place an Order</a></li>
                 <li><a href="ViewOrders.aspx">View Orders</a></li>
@@ -51,7 +46,6 @@
             <button class="btn" href="ViewEmail.aspx">View Email</button>
             <button class="btn" href="ViewPrescriptions.aspx">View Prescriptions</button>
         </div>
-
     </div>
     
 </asp:Content>
